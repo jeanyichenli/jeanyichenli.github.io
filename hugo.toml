@@ -1,4 +1,60 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+copyright = "Jean"
+defaultContentLanguage = "en"
+disableKinds = ["taxonomy"]
+enableRobotsTXT = true
+languageCode = "en"
+timeZone = "Asia/Taipei"
+timeout = "120s"
+title = "Jean's photography"
 theme = "gallery"
+baseURL = 'https://jeanyichenli.github.io/'
+relativeURLs = true
+canonifyURLs = false
+
+[params]
+  defaultTheme = "dark"
+  description = "Website of Jean's photography"
+  title = "Jean's Photography Gallery"
+  [params.author]
+    email = "jean841115@gmail.com"
+    name = "Jean (Yi-Chen) Li"
+  [params.socialIcons]
+    #facebook = "https://www.facebook.com/"
+    instagram = "https://www.instagram.com/jean.photograph/"
+    github = "https://github.com/jeanyichenli/"
+    #youtube = "https://www.youtube.com/"
+    email = "mailto:jean841115@gmail.com"
+    #website = "https://example.com"
+    #mastodon = "https://example.com"
+    #pixelfed = "https://example.com"
+    #mixcloud = "https://example.com"
+    #flickr = "https://www.flickr.com"
+    #500px = "https://500px"
+    #whatsapp = "1234567890"
+  [params.gallery]
+    boxSpacing = 10
+    targetRowHeight = 288
+    targetRowHeightTolerance = 0.25
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+  section = ["HTML"]
+
+[imaging]
+  quality = 75
+  resampleFilter = "CatmullRom"
+  [imaging.exif]
+    disableDate = false
+    disableLatLong = true
+    includeFields = "ImageDescription|Orientation"
+
+[menu]
+  [[menu.footer]]
+    name = "GitHub"
+    url = "https://github.com/jeanyichenli/"
+    weight = 3
+
+[services]
+  [services.rss]
+    limit = 100
