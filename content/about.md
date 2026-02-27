@@ -17,7 +17,7 @@ Digital Cameras:
 - GRIII
 - Lumix TZ90
 
-File Cameras:
+Film Cameras:
 
 - Lomo LC-A
 - Yashica Electro 35 CCN
